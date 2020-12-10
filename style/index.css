@@ -98,10 +98,39 @@ h2 {
 }
 
 main button {
-    padding: 4% 10% 4% 10%;
+    padding: 4% 10%;
 }
 
 main p {
     padding: 6% 0;
     margin-right: 20%;
+}
+
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery li {
+    padding-top: 2%;
+    width: 25%;
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+    padding: 6% 4%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bolder;
+    font-size: 4em;
+    padding-bottom: 2%;
+}
+
+footer button {
+    padding: 2% 6%;
 }
