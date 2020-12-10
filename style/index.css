@@ -51,3 +51,57 @@ table {
 
 /* End CSS Reset */
 
+header {
+    background-color: gray;
+    color: white;
+}
+
+h1 {
+    font-size: 6.5em;
+    font-weight: bolder;
+    padding: 2% 4%;
+}
+
+nav ul {
+    display: flex;
+    margin: 0 6%;
+    padding: 0 0 1% 0;
+}
+
+nav a {
+    background-color: black;
+    border: 1px solid white;
+    padding: 1.25% 1.75%;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 0 4%;
+}
+
+.description {
+    padding-left: 10%;
+}
+
+h2 {
+    font-size: 6em;
+    font-weight: bolder;
+    padding-bottom: 10%;
+}
+
+main button {
+    padding: 4% 10% 4% 10%;
+}
+
+main p {
+    padding: 6% 0;
+    margin-right: 20%;
+}
