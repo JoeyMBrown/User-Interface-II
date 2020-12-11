@@ -121,12 +121,11 @@ main p {
     padding-top: 2%;
     width: 25%;
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: flex-end;
-    text-align: center;
 }
 
-.gallery li img {
+.galleryImg img {
     max-width:100%;
     max-height:100%;
 }
