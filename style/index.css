@@ -117,18 +117,23 @@ main p {
     justify-content: space-around;
 }
 
-.gallery li {
+.galleryImg {
     padding-top: 2%;
     width: 25%;
     display: flex;
     justify-items: center;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
 }
 
 .gallery li img {
     max-width:100%;
     max-height:100%;
+}
+
+#imgText {
+    display: block;
+    text-align: center;
 }
 
 footer {
