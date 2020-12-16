@@ -206,5 +206,21 @@ footer button {
 }
 
 @media(max-width: 500px) {
-    
+
+    nav ul a {
+        text-align: center;
+        width: 15%;
+    }
+
+    nav a {
+        padding: 3% 4.25%;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 5% 0 0 0;
+    }
+
+
 }
