@@ -122,16 +122,17 @@ main p {
 }
 
 .galleryImg {
+    display: flex;
     padding-top: 2%;
     width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column;
 }
 
 .galleryImg img {
     max-width:100%;
-    max-height:100%;
+    max-height: 90%;
 }
 
 #imgText {
@@ -159,4 +160,51 @@ footer button {
 .socialMedia {
     display: flex;
     padding: 1%;
+}
+
+/* Media Queries */
+
+@media(max-width: 800px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul a {
+        text-align: center;
+        width: 7%;
+    }
+
+    nav a {
+        padding: 2% 2.75%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description {
+        padding: 0;
+        text-align: center;
+    }
+
+    main p {
+        padding: 6%;
+        margin: 0;
+    }
+
+    .galleryImg {
+        width: 50%;
+    }
+
+}
+
+@media(max-width: 500px) {
+    
 }
