@@ -1,1 +1,143 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+    font-size: 1.6rem;
+    color: #4F4F4F;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    font-size: 62.5%;
+}
+/*End CSS Reset*/
+
+header nav{
+    background-color: rgba(0, 0, 0, .8);
+    padding: 2% 5% 3%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+}
+header nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    width: 120px;
+    border: 1px solid black;
+    height: 60px;
+}
+header nav a:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+h2 {
+    font-size: 5rem;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4%;
+}
+
+/*Class Styles*/
+.h1Div {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 5rem;
+    color: white;
+    padding: 2% 3% 0;
+}
+.active {
+    background-color: black;
+    color: white;
+}
+.mainContainer {
+    margin-top: 2%;
+    display: flex;
+    border: 1px solid black;
+    align-items: space-between;
+}
+.selfPortrait {
+    width: 49%;
+}
+.selfPortrait img{
+    width: 100%;
+    height: 400px;
+}
+.autoBiography {
+    width: 49%;
+    margin: 5% 0 0 7%;;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    margin: 1% 0 2% 0;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+.projects img, .projects p {
+    width: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects p {
+    margin: 1%;
+}
