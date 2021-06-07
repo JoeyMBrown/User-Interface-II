@@ -54,6 +54,26 @@ html {
 }
 /*End CSS Reset*/
 
+/*General Styles*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%; /*Ensures content cannot be larger than their parent container*/
+    /*border: 1px solid black;*/
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 3.5rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/*End General Styles*/
+
 header nav{
     background-color: rgba(0, 0, 0, .8);
     padding: 2% 5% 3%;
@@ -66,8 +86,6 @@ header nav a{
     justify-content: center;
     align-items: center;
     background-color: white;
-    text-decoration: none;
-    color: black;
     width: 120px;
     border: 1px solid black;
     height: 60px;
@@ -104,8 +122,6 @@ footer {
 .mainContainer {
     margin-top: 2%;
     display: flex;
-    border: 1px solid black;
-    align-items: space-between;
 }
 .selfPortrait {
     width: 49%;
@@ -117,6 +133,9 @@ footer {
 .autoBiography {
     width: 49%;
     margin: 5% 0 0 7%;;
+}
+.autoBiography p{
+    padding: 0 25% 0 0;
 }
 .button {
     display: flex;
@@ -132,12 +151,62 @@ footer {
     justify-content: space-evenly;
     margin-top: 5%;
 }
-.projects img, .projects p {
+.projects div {
     width: 21%;
+}
+.projects img, .projects p {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .projects p {
     margin: 1%;
+}
+
+/*Media Queries*/
+/*From 800px and below apply these styles*/
+@media(max-width: 800px) {
+    .h1Div {
+        text-align: center;
+        background: none;
+        color: black;
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        background: none;
+        border: 0;
+    }
+    .mainContainer {
+        flex-wrap: wrap;
+    }
+    .selfPortrait {
+        width: 100%;
+    }
+    .autoBiography {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .autoBiography p{
+        margin: 0 auto;
+        padding: 0 25% 0 25%;
+        text-align: center;
+    }
+
+    .projects div {
+        width: 40%;
+    }
+}
+
+/*Iphone Query*/
+@media(max-width: 500px) {
+    .autoBiography p{
+        padding: 0 7%;
+    }
 }
